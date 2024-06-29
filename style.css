@@ -1,0 +1,118 @@
+body{
+  margin: 0;
+  background-color: rgb(254, 187, 110);
+}
+
+nav{
+  border: 2px solid green;
+  background-color:rgb(248, 162, 64) ;
+  border:solid 3px rgb(87, 48, 4) ;
+
+}
+
+nav>ul{
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+}
+
+li>a{
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+}
+
+a:hover{
+  color:rgb(91, 42, 10);
+}
+
+.aside{
+  width: 20%;
+  height: 552px;
+  border:solid 3px rgb(87, 48, 4) ;
+  position: absolute;
+  left: 78%;
+  top: 13%;
+  padding-top: 3%;
+  text-align: center;
+}
+
+#about,#article{
+  border:solid 3px rgb(87, 48, 4) ;
+  width: 75%;
+  margin: 15px 20px;
+  background-color:rgb(248, 162, 64) ;
+}
+
+#about::selection,#article::selection{
+  background-color: yellow;
+}
+
+#socials>p{
+  text-align: center;
+}
+#socials{
+  display: grid;
+  grid-template-areas: "one four seven"
+                                    "two five eight"
+                                    "three six nine";
+  border:solid 3px rgb(87, 48, 4) ;
+  width:75%;
+  grid-template-columns: repeat(3 1fr);
+  margin: 0 20px;
+  background-color:rgb(248, 162, 64) ;
+}
+
+/*#socials>p{
+  display: inline-block;
+}*/
+.img1{
+  grid-area: one;
+  background-color:pink;
+}
+
+.img2{
+  grid-area: two;
+  background-color:orange;
+}
+
+.img3{
+  grid-area: three;
+  background-color:violet;
+}
+
+.img4{
+  grid-area:four ;
+  background-color:greenyellow;
+}
+
+.img5{
+  grid-area:five ;
+  background-color:blueviolet;
+}
+
+.img6{
+  grid-area:six ;
+  background-color:yellowgreen
+}
+
+.img7{
+  grid-area: seven;
+  background-color:yellow;
+}
+
+.img8{
+  grid-area:eight ;
+  background-color:plum;
+}
+
+.img9{
+  grid-area:nine ;
+  background-color:orangered;
+}
+
+@media only screen and (max-width:430px){
+  .aside{
+    display: hidden;
+  }
+}
