@@ -28,7 +28,7 @@ a:hover{
 
 .aside{
   width: 20%;
-  height: 552px;
+  height: 530px;
   border:solid 3px rgb(87, 48, 4) ;
   position: absolute;
   left: 78%;
@@ -48,6 +48,10 @@ a:hover{
   background-color: yellow;
 }
 
+input{
+  width: auto;
+}
+
 #socials>p{
   text-align: center;
 }
@@ -61,11 +65,9 @@ a:hover{
   grid-template-columns: repeat(3 1fr);
   margin: 0 20px;
   background-color:rgb(248, 162, 64) ;
+  margin-bottom: 30px;
 }
 
-/*#socials>p{
-  display: inline-block;
-}*/
 .img1{
   grid-area: one;
   background-color:pink;
@@ -111,8 +113,35 @@ a:hover{
   background-color:orangered;
 }
 
-@media only screen and (max-width:430px){
+@media  (1000px <= width <=1160px){
   .aside{
-    display: hidden;
+    height:600px;
+    color:green;
+    padding-bottom: 50px;
+  }
+}
+
+@media only screen and (360px <= width <=999px){
+  .aside{
+    position: static;
+    height: auto;
+    background-color:rgb(248, 162, 64) ;
+
+  }
+  
+  #about,#article,.aside,#socials{
+    width: 80%;
+    margin: auto;
+    padding:10px 15px;
+    text-align: center;
+    border: none;
+  }
+
+  #socials{
+    margin-bottom: 30px;
+  }
+
+  #about{
+    margin-top: 30px;
   }
 }
